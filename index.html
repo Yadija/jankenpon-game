@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jankenpon</title>
+  <link rel="stylesheet" href="assets/style/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Jankenpon Game</h1>
+  </header>
+
+  <main>
+    <section class="player">
+      <h2>Player</h2>
+
+      <ul>
+        <li><img tabindex="1" src="assets/image/kertas.png" alt="Kertas" class="kertas"></li>
+        <li><img tabindex="1" src="assets/image/batu.png" alt="Batu" class="batu"></li>
+        <li><img tabindex="1" src="assets/image/gunting.png" alt="Gunting" class="gunting"></li>
+      </ul>
+    </section>
+    
+    <section class="result">
+      <h2 id="score" class="score">Score <span id="scorePlayer">0</span> - <span id="scoreComputer">0</span></h2>
+      <h2 id="point" class="point"></h2>
+    </section>
+    
+    <section class="computer">
+      <h2>Computer</h2>
+      
+      <div>
+        <img id="imgComputer" src="assets/image/kertas.png" alt="Kertas">
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>Copyright ©2022 - Jankenpon Game created by Yadija</p>
+  </footer>
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    color: #383E56;
+    background: #EEDAD1;
+    flex-direction: column;
+}
+
+header {
+    height: 15%;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    border-bottom: 1px solid #383E56;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+
+section.player ul li {
+    list-style: none;
+}
+
+section.player ul li img {
+    cursor: pointer;
+}
+
+section.player ul li img:active {
+    transform: translate(1px, 1px);
+}
+
+section.result {
+    display: flex;
+    flex-direction: column;
+}
+
+section.result .point {
+    width: 125px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 38px;
+    margin: auto;
+    border-radius: 5px;
+    background: #383E56;
+    color: #EEDAD1;
+}
+
+section.computer div {
+    height: 462px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+}
+
+img:focus {
+    border-radius: 50%;
+}
+
+img#imgComputer {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.player ul {
+        display: flex;
+    }
+
+    section.computer div {
+        display: inline;
+    }
+
+    img {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        font-size: 14px;
+    }
+}
